@@ -54,6 +54,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  resource :dashboard, only: [:show]
   root 'static_pages#index'
   resources :courses, only: [:index, :show] do
     resources :enrollments, only: :create
