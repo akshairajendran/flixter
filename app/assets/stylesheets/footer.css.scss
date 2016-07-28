@@ -22,9 +22,41 @@ body {
   color:white;
   background-color: rgba(160,160,160,0.4);
   font-family: 'Helvetica Neue', Helvetica;
+  font-weight:100;
 }
 
 #footer a {
   color:white;
   font-weight:100;
+}
+
+.social-button {
+  width:32px;
+  margin:4px;
+}
+
+#facebook {
+  margin-top:10px;
+}
+
+#twitter {
+  margin-top:11px;
+}
+
+.social a:hover {
+  text-decoration:none;
+}
+
+$footer-height-mobile: 300px;
+@media (max-width:750px) {
+  #footer {
+    height:$footer-height-mobile;
+  }
+
+  #wrap {
+    margin: 0 auto -($footer-height-mobile);
+    /* Pad bottom by footer height */
+    padding: 0 0 $footer-height-mobile;
+  }
+
 }
